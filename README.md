@@ -5,8 +5,8 @@
 
 [Apkpure_androidappsapk.co_1.apk](https://github.com/wangwenzhiwwz/file/blob/master/Apkpure_androidappsapk.co_1.apk?raw=true)
 
-## 蓝灯专业破解版
+## VectorMagic1.15完美版
 
-[蓝灯专业破解版]()
+[VectorMagic1.15完美版](https://github.com/wangwenzhiwwz/file/blob/master/VectorMagic1.15%E5%AE%8C%E7%BE%8E%E7%89%88.exe?raw=true)
 
 
