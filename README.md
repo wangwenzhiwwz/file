@@ -12,3 +12,7 @@
 
 ## Shadowsocks windows客户端
 [Shadowsocks](https://github.com/wangwenzhiwwz/file/blob/master/pgfastss.zip?raw=true)
+
+## hosts
+hosts 位置"C:\Windows\System32\drivers\etc"
+[hosts](https://github.com/wangwenzhiwwz/file/blob/master/hosts.zip?raw=true)
