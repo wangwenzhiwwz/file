@@ -16,3 +16,6 @@
 ## hosts
 hosts 位置"C:\Windows\System32\drivers\etc"
 [hosts](https://github.com/wangwenzhiwwz/file/blob/master/hosts.zip?raw=true)
+
+## wwz app
+[app](https://github.com/wangwenzhiwwz/file/blob/master/wwz_1.1.apk?raw=true)
