@@ -19,3 +19,6 @@ hosts 位置"C:\Windows\System32\drivers\etc"
 
 ## wwz app
 [app](https://github.com/wangwenzhiwwz/file/blob/master/wwz_1.1.apk)
+
+## Camera FV-5 3.32
+[Camera FV-5 3.32](https://github.com/wangwenzhiwwz/file/blob/master/Camera%20FV-.apk?raw=true)
