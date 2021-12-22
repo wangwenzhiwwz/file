@@ -1,6 +1,10 @@
 # file
 存放文件
 
+## V2rayNG
+
+[V2rayNG 1.2](https://github.com/wangwenzhiwwz/file/blob/master/v2rayNG_v1.2.10.apk?raw=true)
+
 ## 永久免费VPN
 
 [不良林VPN](https://github.com/wangwenzhiwwz/file/blob/master/%E4%B8%8D%E8%89%AF%E6%9E%97%20VPN.apk?raw=true)
