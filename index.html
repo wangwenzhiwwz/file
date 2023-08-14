@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://wangwenzhi.eu.org/images/favicon.ico">
-    <title>Wangwenzhi Flie</title>
+    <title>Wangwenzhi Navigation</title>
     <style>
         /* 基本样式 */
         body {
@@ -25,14 +25,23 @@
             color: #333;
             margin: 0;
         }
+        .app-category {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+        .app-category-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
         .app-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自适应的网格布局，每列最小宽度为200px */
             gap: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
         }
         .app-item {
             display: flex;
@@ -49,11 +58,11 @@
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* 鼠标覆盖时添加浅阴影效果 */
         }
         .app-icon {
-            flex: 0 0 100px; /* 固定图标宽度 */
+            width: 100px;
             height: 100px;
-            margin-bottom: 10px;
-            border-radius: 15px; /* 圆角矩形 */
+            border-radius: 50%;
             object-fit: cover; /* 确保图标填充整个容器 */
+            margin-bottom: 10px;
         }
         .app-details {
             flex: 1;
@@ -80,79 +89,278 @@
         .app-link:hover {
             color: #0056b3; /* 鼠标覆盖时变亮的颜色 */
         }
+
+        /* 响应式布局 */
+        @media (max-width: 600px) {
+            .app-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 在小屏幕上调整列数和最小宽度 */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Software Download</h1>
+        <h1>Wangwenzhi Navigation</h1>
     </header>
 
-    <section class="app-grid">
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/v2rayNG_1.8.6.apk" class="app-link">
-                <img class="app-icon" src="./images/v2ray.png">
-                <h3 class="app-name">V2rayNG</h3>
-                <p class="app-description">安卓版V2Ray客户端，支持Xray核心和v2fly核心</p>
+    <!-- Android -->
+    <div class="app-category">
+        <h2 class="app-category-title">Android</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/v2rayNG_1.8.6.apk" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/v2ray.png">
+                    <h3 class="app-name">V2rayNG</h3>
+                    <p class="app-description">安卓版V2Ray客户端</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/APKPure_v3.19.34_apkpure.com.apk" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/apkpure.png">
+                    <h3 class="app-name">Apkpure</h3>
+                    <p class="app-description">快速下载安卓APK文件</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://www.coolapk.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/CoolAPK.png">
+                    <h3 class="app-name">酷安</h3>
+                    <p class="app-description">玩数码，上酷安 真实有趣的数码社区</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/MX_Player_Pro-v1.68.4_build.apk" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/MxPlayer.png">
+                    <h3 class="app-name">MXPlayer</h3>
+                    <p class="app-description">强大的视频播放器</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/Wow.clock.apk" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/wow.png">
+                    <h3 class="app-name">Wow时钟</h3>
+                    <p class="app-description">时钟/倒计时显示APP</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://www.nivod4.tv/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/nivideo.jfif">
+                    <h3 class="app-name">泥视频</h3>
+                    <p class="app-description">海外华人在线影院</p>
+                 
+                </a>
+            </div>
+
+            <!-- Android -->
+        </div>
+    </div>
+
+    <!-- Web -->
+    <div class="app-category">
+        <h2 class="app-category-title">Web</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="https://wangwenzhi.eu.org/" class="app-link" target="_blank">
+                    <img class="app-icon" src="http://q1.qlogo.cn/g?b=qq&nk=99218632&s=640">
+                    <h3 class="app-name">WangWenzhi</h3>
+                    <p class="app-description">我的个人博客网站</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://wangwenzhi.eu.org/myip" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/myip.png">
+                    <h3 class="app-name">MY IP</h3>
+                    <p class="app-description">全球IP定位查询</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://chat.openai.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/openai.png">
+                    <h3 class="app-name">ChatGPT</h3>
+                    <p class="app-description">对话方式进行交互的人工智能</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://whimsical.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/whimsical.jfif">
+                    <h3 class="app-name">Whimsical</h3>
+                    <p class="app-description">Where great ideas take shape</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://app.mediastory.cc/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/SDFJ.webp">
+                    <h3 class="app-name">闪电分镜</h3>
+                    <p class="app-description">轻松高效的 前期策划</p>
+                 
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://www.v2ex.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/v2ex.png">
+                    <h3 class="app-name">V2EX</h3>
+                    <p class="app-description">创意工作者的社区</p>
+                 
+                </a>
+            </div>
+
+
+
+            <!-- Web -->
+        </div>
+    </div>
+
+    
+    <!-- Windows -->
+    <div class="app-category">
+        <h2 class="app-category-title">Windows</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/v2rayN-With-Core-SelfContained.7z" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/v2rayn.jpg">
+                    <h3 class="app-name">V2rayN</h3>
+                    <p class="app-description">适用于Windows的GUI客户端</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://jpsmile.com/davinci-resolve-studio-18/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/Davinci-Resolve.png">
+                    <h3 class="app-name">Davinci Resolve</h3>
+                    <p class="app-description">专业的剪辑调色特效和音频后期制作软件</p>
                 
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/APKPure_v3.19.34_apkpure.com.apk" class="app-link">
-                <img class="app-icon" src="./images/apkpure.png">
-                <h3 class="app-name">Apkpure</h3>
-                <p class="app-description">快速下载安卓APK文件</p>
-             
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/MX_Player_Pro-v1.68.4_build.apk" class="app-link">
-                <img class="app-icon" src="./images/MxPlayer.png">
-                <h3 class="app-name">MXPlayer</h3>
-                <p class="app-description">强大的视频播放器</p>
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://github.com/wangwenzhiwwz/file/releases/download/Windows/Windows.3.6.5.exe" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/windows.jpg">
+                    <h3 class="app-name">Windows设置</h3>
+                    <p class="app-description">Windows 11实用设置工具</p>
                 
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/Wow.clock.apk" class="app-link">
-                <img class="app-icon" src="./images/wow.png">
-                <h3 class="app-name">Wow时钟</h3>
-                <p class="app-description">快速下载安卓APK文件</p>
-             
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/APK/v2rayN-With-Core-SelfContained.7z" class="app-link">
-                <img class="app-icon" src="./images/v2rayn.jpg">
-                <h3 class="app-name">V2rayN</h3>
-                <p class="app-description">适用于Windows的GUI客户端</p>
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://lrepacks.net/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/lrepacks.png">
+                    <h3 class="app-name">Lrepacks</h3>
+                    <p class="app-description">俄罗斯软件打包破解</p>
                 
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="https://github.com/wangwenzhiwwz/file/releases/download/Windows/Windows.3.6.5.exe" class="app-link">
-                <img class="app-icon" src="./images/windows.jpg">
-                <h3 class="app-name">Windows设置</h3>
-                <p class="app-description">Windows 11实用设置工具</p>
-             
-            </a>
-        </div>
-        <div class="app-item">
-            <a href="http://www.xiaojingtv.com/" class="app-link">
-                <img class="app-icon" src="./images/xiaojing.png">
-                <h3 class="app-name">小鲸</h3>
-                <p class="app-description">TV直播客户端</p>
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://tabby.sh/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/tabby-logo.png">
+                    <h3 class="app-name">Tabby SSH</h3>
+                    <p class="app-description">全平台SSH远程管理工具</p>
                 
-            </a>
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://parsec.app/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/parsec.png">
+                    <h3 class="app-name">Parsec</h3>
+                    <p class="app-description">随时随地连接到工作、游戏或项目</p>
+                
+                </a>
+            </div>
+
+            <!-- Windows -->
         </div>
-        <div class="app-item">
-            <a href="https://app.emotn.com/" class="app-link">
-                <img class="app-icon" src="./images/emotn.webp">
-                <h3 class="app-name">Apkpure</h3>
-                <p class="app-description">快速下载安卓APK文件</p>
-             
-            </a>
+    </div>
+    
+    <!-- iOS -->
+    <div class="app-category">
+        <h2 class="app-category-title">iOS</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="https://apps.apple.com/us/app/shadowrocket/id932747118" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/shadorocket.webp">
+                    <h3 class="app-name">Shadowrocket</h3>
+                    <p class="app-description">基于规则的代理实用程序</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://www.qweather.com/en/app" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/QWeather.webp">
+                    <h3 class="app-name">QWeather</h3>
+                    <p class="app-description">和风天气提供全球天气预报</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://landrop.app/#downloads" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/LANDrop.svg">
+                    <h3 class="app-name">LanDrop</h3>
+                    <p class="app-description">将文件拖放到局域网上的任何设备</p>
+                    
+                </a>
+            </div>
+            
+            <!-- iOS -->
         </div>
-        <!-- 添加更多软件项 -->
-    </section>
+    </div>
+    
+    <!-- Mac -->
+    <div class="app-category">
+        <h2 class="app-category-title">Mac</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="https://www.apple.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/Apple.png">
+                    <h3 class="app-name">Apple</h3>
+                    <p class="app-description">苹果官方网站</p>
+                   
+                </a>
+            </div>
+
+
+            <!-- Mac -->
+        </div>
+    </div>
+
+    
+    
+
+    
+
+
+
+    <!-- TV -->
+    <div class="app-category">
+        <h2 class="app-category-title">TV</h2>
+        <div class="app-grid">
+            <div class="app-item">
+                <a href="http://www.xiaojingtv.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/xiaojing.png">
+                    <h3 class="app-name">小鲸</h3>
+                    <p class="app-description">TV直播客户端</p>
+                    
+                </a>
+            </div>
+            <div class="app-item">
+                <a href="https://app.emotn.com/" class="app-link" target="_blank">
+                    <img class="app-icon" src="./images/emotn.webp">
+                    <h3 class="app-name">Emotn</h3>
+                    <p class="app-description">Free app store for all Android TV, TV Box and projector</p>
+                 
+                </a>
+            </div>
+
+
+            <!-- TV -->
+        </div>
+    </div>
+
+
 </body>
 </html>
