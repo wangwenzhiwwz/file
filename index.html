@@ -142,20 +142,6 @@
             color: #0056b3; /* 鼠标覆盖时变亮的颜色 */
         }
 
-        /* 响应式布局 */
-        @media (max-width: 600px) {
-        .app-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 在小屏幕上调整列数和最小宽度 */
-            }
-        }
-        .image-container img {
-                max-width: 300%;
-                /* Show the middle 50% of the image */
-                left: -100%;
-                /* Adjust the positioning to show the middle */
-                transform: none;
-                /* Reset the transform */
-            }
         .image-container {
             max-width: 100%;
             overflow: hidden;
@@ -170,8 +156,24 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+
         /* 响应式布局 */
         @media (max-width: 600px) {
+            .app-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 在小屏幕上调整列数和最小宽度 */
+            }
+            .image-container img {
+                max-width: 300%;
+                /* Show the middle 50% of the image */
+                left: -100%;
+                /* Adjust the positioning to show the middle */
+                transform: none;
+                /* Reset the transform */
+            }
+        }
+        
+
             
     </style>
     <script>
