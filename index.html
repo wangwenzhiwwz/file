@@ -144,10 +144,35 @@
 
         /* 响应式布局 */
         @media (max-width: 600px) {
-            .app-grid {
+        .app-grid {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 在小屏幕上调整列数和最小宽度 */
             }
         }
+        .image-container img {
+                max-width: 300%;
+                /* Show the middle 50% of the image */
+                left: -100%;
+                /* Adjust the positioning to show the middle */
+                transform: none;
+                /* Reset the transform */
+            }
+        .image-container {
+            max-width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /* 响应式布局 */
+        @media (max-width: 600px) {
+            
     </style>
     <script>
         // JavaScript function to reload the current page
@@ -157,6 +182,9 @@
     </script>
 </head>
 <body>
+    <div class="image-container">
+        <img src="https://wangwenzhi.eu.org/images/images/appstore.png" alt="自适应图片">
+    </div>
     <header>
         <a href="#" onclick="refreshPage()" >
             <div class="logo">
